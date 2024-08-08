@@ -570,6 +570,12 @@ export default {
   com_nav_font_size_base: 'Medium',
   com_nav_font_size_lg: 'Large',
   com_nav_font_size_xl: 'Extra Large',
+
+  com_nav_chat_width: 'Chat Width',
+  com_nav_chat_width_narrower: 'Narrower',
+  com_nav_chat_width_base: 'Normal',
+  com_nav_chat_width_wider: 'Wider',
+
   com_nav_welcome_assistant: 'Please Select an Assistant',
   com_nav_welcome_message: 'How can I help you today?',
   com_nav_auto_scroll: 'Auto-Scroll to latest message on chat open',

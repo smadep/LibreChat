@@ -24,6 +24,9 @@ const localStorageAtoms = {
   hideSidePanel: atomWithLocalStorage('hideSidePanel', false),
   fontSize: atomWithLocalStorage('fontSize', 'text-base'),
 
+  // Width settings
+  chatWidth: atomWithLocalStorage('chatWidth', 'chat-width-base'),
+
   // Messages settings
   enterToSend: atomWithLocalStorage('enterToSend', true),
   chatDirection: atomWithLocalStorage('chatDirection', 'LTR'),

@@ -645,6 +645,7 @@ export default {
   com_nav_user_name_display: 'Benutzernamen in Nachrichten anzeigen',
   com_nav_save_drafts: 'Entwürfe lokal speichern',
   com_nav_chat_direction: 'Chat-Richtung',
+  com_nav_chat_width: 'Chat-Breite',
   com_nav_show_code: 'Code immer anzeigen, wenn der Code-Interpreter verwendet wird',
   com_nav_auto_send_prompts: 'Prompts automatisch senden',
   com_nav_always_make_prod: 'Neue Versionen direkt produktiv nehmen',
