@@ -44,7 +44,7 @@ services:
       - 27017
     # ports:
     #   - 27018:27017
-    image: mongo
+    image: mongodb/mongodb-community-server
     # restart: always
     volumes:
       - ./data-node:/data/db
