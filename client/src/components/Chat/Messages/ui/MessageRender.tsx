@@ -90,8 +90,8 @@ const MessageRender = memo(
           'final-completion group mx-auto flex flex-1 gap-3',
           isCard === true
             ? 'relative w-full gap-1 rounded-lg border border-border-medium bg-surface-primary-alt p-2 md:w-1/2 md:gap-3 md:p-4'
-            : // : 'md:max-w-3xl md:px-5 lg:max-w-[40rem] lg:px-1 xl:max-w-[18rem] xl:px-5',
-            'md:max-w-3xl md:px-5 lg:max-w-[40rem] lg:px-1 xl:px-5',
+            // : 'md:max-w-3xl md:px-5 lg:max-w-[40rem] lg:px-1 xl:max-w-[48rem] xl:px-5',
+            : 'md:max-w-3xl md:px-5 lg:max-w-[40rem] lg:px-1 xl:px-5',
           'xl:chat-max-width',
           isLatestCard === true ? 'bg-surface-secondary' : '',
           showCardRender ? 'cursor-pointer transition-colors duration-300' : '',
