@@ -1,4 +1,6 @@
 require('dotenv').config();
+const { logger } = require('~/config');
+
 const mongoose = require('mongoose');
 const MONGO_URI = process.env.MONGO_URI;
 
@@ -32,6 +34,8 @@ async function connectDb() {
       // useFindAndModify: true,
       // useCreateIndex: true
     };
+
+    logger.info('Connecting to MongoDB: ' + MONGO_URI);
 
     mongoose.set('strictQuery', true);
     cached.promise = mongoose.connect(MONGO_URI, opts).then((mongoose) => {
