@@ -1,6 +1,6 @@
 import { useRecoilState } from 'recoil';
 import { Dropdown } from '~/components/ui';
-//import { applyFontSize } from '~/utils';
+import { applyChatWidth } from '~/utils';
 import { useLocalize } from '~/hooks';
 import store from '~/store';
 
@@ -10,7 +10,7 @@ export default function ChatWidthSelector() {
 
   const handleChange = (val: string) => {
     setChatWidth(val);
-    //applyFontSize(val);
+    applyChatWidth(val);
   };
 
   const options = [

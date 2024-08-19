@@ -21,6 +21,23 @@ export const applyFontSize = (val: string) => {
   }
 };
 
+export const applyChatWidth = (val: string) => {
+  const root = document.documentElement;
+  const size = val.split('-')[2]; // This will be 'narrower', ''base', or 'wider'
+
+  switch (size) {
+    case 'narrower':
+      root.style.setProperty('--markdown-chat-width', '36rem');
+      break;
+    case 'base':
+      root.style.setProperty('--markdown-chat-width', '48rem');
+      break;
+    case 'wider':
+      root.style.setProperty('--markdown-chat-width', '78rem');
+      break;
+  }
+};
+
 export const getInitialTheme = () => {
   if (typeof window !== 'undefined' && window.localStorage) {
     const storedPrefs = window.localStorage.getItem('color-theme');

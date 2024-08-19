@@ -26,6 +26,10 @@
   --font-size-base: 1rem;
   --font-size-lg: 1.125rem;
   --font-size-xl: 1.25rem;
+
+  --chat-width-narrower: 36rem;
+  --chat-width-base: 48rem;
+  --chat-width-wider: 78rem;
 }
 html {
   --text-primary: var(--gray-800);
@@ -2341,3 +2345,6 @@ button.scroll-convo {
   line-height: inherit;
 }
 
+.chat-max-width {
+  max-width: var(--markdown-chat-width, var(--chat-width-base));
+}
