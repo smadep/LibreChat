@@ -74,6 +74,14 @@ export const ThemeProvider = ({ initialTheme, children }) => {
     applyChatWidth(JSON.parse(chatWidth));
   }, []);
 
+  useEffect(() => {
+    const chatWidth = localStorage.getItem('chatWidth');
+    if (chatWidth == null) {
+      return;
+    }
+    applyChatWidth(JSON.parse(chatWidth));
+  }, []);
+
   if (initialTheme) {
     rawSetTheme(initialTheme);
   }
