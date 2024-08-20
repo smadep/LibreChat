@@ -14,9 +14,9 @@ export default function ChatWidthSelector() {
   };
 
   const options = [
-    { value: 'chat-width-narrower', display: localize('com_nav_chat_width_narrower') },
-    { value: 'chat-width-base', display: localize('com_nav_chat_width_base') },
-    { value: 'chat-width-wider', display: localize('com_nav_chat_width_wider') },
+    { value: 'chat-width-narrower', label: localize('com_nav_chat_width_narrower') },
+    { value: 'chat-width-base', label: localize('com_nav_chat_width_base') },
+    { value: 'chat-width-wider', label: localize('com_nav_chat_width_wider') },
   ];
 
   return (
