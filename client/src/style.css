@@ -2345,6 +2345,6 @@ button.scroll-convo {
   line-height: inherit;
 }
 
-.chat-max-width {
-  max-width: var(--markdown-chat-width, var(--chat-width-base));
+.xl\:chat-max-width {
+  max-width: var(--markdown-chat-width, var(--chat-width-base)) !important;
 }
